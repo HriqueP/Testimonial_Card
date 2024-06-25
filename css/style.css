@@ -1,0 +1,64 @@
+:root {
+  --bg-color-1: #ffffff;
+  --bg-color-2: #d2d6db;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+body {
+  background-image: linear-gradient(
+    315deg,
+    var(--bg-color-2),
+    var(--bg-color-1)
+  ); /* Temporary */
+  min-height: 100vh;
+  overflow: hidden;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Content */
+.card {
+  background-color: var(--bg-color-1);
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  gap: 16px;
+  padding: 24px;
+  margin: 200px auto 0px auto;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px #d2d6db;
+}
+
+.user-information {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.name {
+  font-weight: 600;
+}
+
+/* Credits */
+.credits {
+  color: #777;
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  font-size: 11px;
+  text-align: center;
+}
+.credits a {
+  font-weight: bold;
+  text-decoration: none;
+}
